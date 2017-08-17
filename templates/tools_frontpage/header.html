@@ -1,0 +1,105 @@
+<header id="header" class="site-header" role="banner">
+    <!-- Mobile -->
+    <div class="site-title-bar title-bar" data-responsive-toggle="responsive-menu" data-hide-for="medium">
+        <div class="title-bar-left">
+            <button class="menu-icon" type="button" data-toggle="dafsd"></button>
+            <span class="site-mobile-title title-bar-title">
+                        <a href="#"></a>
+                    </span>
+        </div>
+    </div>
+    {% load static %}
+    <!-- Computer -->
+    <nav class="site-navigation top-bar" role="navigation" data-show-for="medium" id="responsive-menu">
+        <div class="top-bar-left">
+            <div class="site-desktop-title top-bar-title">
+                <a href="{# URL #}" rel="home">
+                    <img class="site-title-logo" src="{%  static  'tools_frontpage/img/plain_logo_rbg_cropped.svg' %}"/>
+                </a>
+            </div>
+        </div>
+        <div class="top-bar-right">
+
+            <div class="header-search">
+                <form method="get" action="https://data.wprdc.org/dataset">
+                    <div class="right input-group">
+                        <input name="q" type="text" class="input-group-field" placeholder="Search for open data"
+                               autocomplete="off">
+                        <div class="input-group-button">
+                            <button type="submit" class="button"><i class="material-icons">search</i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div>
+
+                <ul id="menu-main" class="ckan dropdown menu desktop-menu" data-dropdown-menu="" role="menubar"
+                    data-is-click="false">
+                    <!--Data-->
+                    <li class="menu-item" role="menuitem"><a href="http://data.wprdc.org">Data</a>
+                        <ul class="dropdown menu vertical submenu is-dropdown-submenu first-sub" data-toggle=""
+                            data-submenu="" role="menu" style="">
+                            <li class="menu-item is-submenu-item is-dropdown-submenu-item" role="menuitem"><a
+                                    href="https://data.wprdc.org/dataset">Datasets</a></li>
+                            <li class="menu-item is-submenu-item is-dropdown-submenu-item" role="menuitem"><a
+                                    href="https://data.wprdc.org/organization">Publishers</a></li>
+                            <li class="menu-item is-submenu-item is-dropdown-submenu-item" role="menuitem"><a
+                                    href="https://data.wprdc.org/group">Topics</a></li>
+                            <li class="menu-item is-submenu-item is-dropdown-submenu-item" role="menuitem"><a
+                                    href="https://data.wprdc.org/datarequest">Data Requests</a></li>
+                        </ul>
+                    </li>
+                    <!--tools-->
+                    <li class="menu-item" role="menuitem"><a href="https://tools.wprdc.org">Tools</a></li>
+                    <!--showcase-->
+                    <li class="menu-item" role="menuitem"><a
+                            href="{# URL #}/category/showcase/">Showcase</a></li>
+
+                    <!--get involved-->
+                    <li class="menu-item is-dropdown-submenu-parent opens-left" role="menuitem" aria-haspopup="true"
+                        aria-label="Get Involved" data-is-click="false"><a
+                            href="{# URL #}/get-involved/">Get Involved</a>
+                        <ul class="dropdown menu vertical submenu is-dropdown-submenu first-sub" data-toggle=""
+                            data-submenu="" role="menu" style="">
+                            <li class="menu-item is-submenu-item is-dropdown-submenu-item"
+                                role="menuitem"><a href="{# URL #}/events/">Events</a>
+                            </li>                            <li class="menu-item is-submenu-item is-dropdown-submenu-item"
+                                role="menuitem"><a href="{# URL #}/tutorials/">New to Open Data</a>
+                            </li>                            <li class="menu-item is-submenu-item is-dropdown-submenu-item"
+                                role="menuitem"><a href="{# URL #}/tutorials/">Data Wizards</a>
+                            </li>                            <li class="menu-item is-submenu-item is-dropdown-submenu-item"
+                                role="menuitem"><a href="{# URL #}/publishers/">Publishers</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!--news-->
+                    <li class="menu-item" role="menuitem"><a href="{# URL #}/category/news/">News</a>
+                    </li>
+                    <!--about-->
+                    <li class="menu-item" role="menuitem"><a href="{# URL #}/contact/">Contact
+                        Us</a></li>
+                    <!--contact-->
+                    <li class="menu-item is-dropdown-submenu-parent opens-left" role="menuitem" aria-haspopup="true"
+                        aria-label="Get Involved" data-is-click="false"><a
+                            href="{# URL #}/about/">About</a>
+                        <ul class="dropdown menu vertical submenu is-dropdown-submenu first-sub" data-toggle=""
+                            data-submenu="" role="menu" style="">
+                            <li class="menu-item is-submenu-item is-dropdown-submenu-item"
+                                role="menuitem"><a href="{# URL #}/background/">Background</a>
+                            </li>
+                            <li class="menu-item is-submenu-item is-dropdown-submenu-item"
+                                role="menuitem"><a href="{# URL #}/people/">People</a>
+                            </li>
+                            <li class="menu-item is-submenu-item is-dropdown-submenu-item"
+                                role="menuitem"><a href="{# URL #}/performance-management/">Performance Management</a>
+                            </li>
+                            <li class="menu-item is-submenu-item is-dropdown-submenu-item"
+                                role="menuitem"><a href="{# URL #}/data-management-plan/">Data Management Plan</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>

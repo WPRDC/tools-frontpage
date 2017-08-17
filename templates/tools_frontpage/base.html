@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tools</title>
+
+    {% load static %}
+
+    <!-- Style Sheets -->
+    <link rel="stylesheet" href="{% static 'tools_frontpage/css/app.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Lato" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+            crossorigin="anonymous"></script>
+    <script src="{% static 'tools_frontpage/js/vendor/foundation.js' %}"></script>
+    <script src="{% static 'tools_frontpage/js/wprdc.js' %}"></script>
+
+</head>
+<body>
+{% include "tools_frontpage/header.html" %}
+
+{% block content %}
+{% endblock %}
+
+{% include "tools_frontpage/footer.html" %}
+
+</body>
+</html>

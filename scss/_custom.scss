@@ -1,0 +1,93 @@
+$input-padding: rem-calc(2px) rem-calc(4px) rem-calc(4px) rem-calc(4px);
+
+body{
+  background: $wprdc-white;
+}
+
+.card {
+  $hoff: 3px;
+  $voff: 3px;
+  $blur: 2px;
+  $color: $wprdc-gray;
+
+  margin-bottom: 0;
+  -webkit-box-shadow: $hoff $voff $blur $color;
+  -moz-box-shadow: $hoff $voff $blur $color;
+  box-shadow: $hoff $voff $blur $color;
+
+  position: relative;
+  border: 2px solid $wprdc-black;
+
+  &:hover{
+    border: 2px solid $wprdc-yellow;
+  }
+}
+
+$text-bg: rgba($wprdc-white, 1);
+
+.tool-title {
+  font-family: $header-font-family;
+  margin-top: 0;
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: $wprdc-black;
+  background: $text-bg;
+  padding: 2px 5px 2px 3px;
+
+}
+
+.tool-description {
+  display: inline-block;
+  background: $text-bg;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding: 2px 5px;
+  position: absolute;
+  bottom:0;
+  left: 0;
+}
+
+.corner-ribbon {
+  width: 150px;
+  background: #e43;
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  text-align: center;
+  line-height: 25px;
+  color: #f0f0f0;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+
+  font-size: .8rem;
+  font-weight: 600;
+
+  $hoff: 2px;
+  $voff: 2px;
+  $blur: 1px;
+  $color: rgba($wprdc-black, 0.5);
+
+  margin-bottom: 0;
+  -webkit-box-shadow: $hoff $voff $blur $color;
+  -moz-box-shadow: $hoff $voff $blur $color;
+  box-shadow: $hoff $voff $blur $color;
+
+  &.top-right {
+    top: 25px;
+    right: -40px;
+    left: auto;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+  }
+
+  &.yellow {
+    background: $wprdc-yellow;
+    color: $wprdc-black;
+  }
+
+  &.black {
+    background: $wprdc-black;
+    color: $wprdc-yellow;
+  }
+
+}

@@ -1,0 +1,35 @@
+{% extends 'tools_frontpage/base.html' %}
+
+{% block content %}
+    {# Tools #}
+    {% if tools %}
+        <div id="tools" class="section">
+            <p>
+                {{ guide.tools_text|linebreaks }}
+            </p>
+            <div class="row small-up-1 large-up-2">
+                {% for tool in tools %}
+                    <div class="column column-block">
+                        <a href="{{ tool.url }}" target="_blank">
+                            <div class="card" style="width: 100%; height: 240px;
+                                    background-image: url({{ tool.pic.url }});
+                                    background-position: -50px -50px;
+                                    ">
+                                <span class="tool-title">{{ tool.title }}</span>
+                                {% if 'WPRDC' in tool.author_org %}
+                                    <div class="corner-ribbon top-right yellow">wprdc made</div>
+                                {% elif 'community' in tool.author_org %}
+                                    <div class="corner-ribbon top-right black">community made</div>
+
+                                {% endif %}
+
+                                <p class="tool-description">{{ tool.description }} </p>
+                            </div>
+                        </a>
+                    </div>
+
+                {% endfor %}
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}
